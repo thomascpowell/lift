@@ -1,0 +1,22 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+/*New item button*/
+.new {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: .8em 1em;
+    background-color: var(--bg3);
+    border-bottom: 2px solid var(--border);
+    border-radius: .4em .4em 0 0;
+}
+.new > div {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}

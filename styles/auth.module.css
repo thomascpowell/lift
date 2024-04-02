@@ -1,0 +1,60 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 2em);
+  align-items: center;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5em;
+  background-color: var(--bg2);
+  border: 2px solid var(--border);
+}
+
+.mode {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.mode button {
+  background-color: var(--bg);
+  color: var(--color2);
+  padding: 1em 1em;
+  border: none;
+  cursor: pointer;
+  border-bottom: 2px solid var(--border);
+}
+.mode :nth-child(1) {
+  border-radius: 0.4em 0 0 0;
+  border-right: 2px solid var(--border);
+}
+.mode :nth-child(2) {
+  border-radius: 0 0.4em 0 0;
+}
+.active {
+  color: var(--color) !important;
+  background-color: var(--bg2) !important;
+  border-bottom: 2px solid var(--bg2)!important;
+}
+.form form {
+  margin: 1em;
+  width: 20em;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+}
+.form input {
+  background-color: var(--bg3);
+  border: 2px solid var(--border);
+  padding: 0.5em;
+  border-radius: 0.25em;
+  color: var(--color);
+}
+
+.submit {
+  background-color: var(--bg3) !important;
+  cursor: pointer;
+}

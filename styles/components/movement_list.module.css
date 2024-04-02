@@ -1,0 +1,97 @@
+.wrapper {
+  display: flex;
+  background-color: var(--bg2);
+  border: 2px solid var(--border);
+  border-radius: 0.5em;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper :last-child {
+  border: none;
+  border-radius: 0.5em;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.8em 1em;
+  background-color: var(--bg3);
+  border-bottom: 2px solid var(--border);
+  border-radius: 0.4em 0.4em 0 0;
+}
+.header p {
+  display: flex;
+  align-items: center;
+}
+.header > div {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  gap: 0.5em;
+  border-bottom: 2px solid var(--border);
+  color: var(--text);
+  background-color: var(--bg2);
+  padding: 0.8em 1em;
+  justify-content: space-between;
+  cursor: pointer;
+
+  white-space: nowrap;
+  overflow: scroll !important;
+}
+
+.itemleft {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 0.2em;
+  justify-content: center;
+}
+.itemleft :nth-child(1) {
+  font-size: 1.1em;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+.itemleft :nth-child(2) {
+  font-size: 0.8em;
+  color: var(--color2);
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+
+.itemright p {
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+.itemright > * {
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+  justify-content: center;
+}
+.itemright svg {
+  scale: 0.9;
+}
+
+@media screen and (max-width: 600px) {
+  .itemright svg {
+    scale: .7;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header svg {
+    scale: 0.9;
+  }
+}

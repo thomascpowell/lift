@@ -1,0 +1,86 @@
+/* Wrapper */
+.wrapper {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 2em 0;
+  gap: 1em;
+}
+.header h1 {
+  font-size: 1.5em;
+  overflow: hidden;
+}
+.header input {
+  background-color: transparent;
+  border: 0;
+  width: 100% !important;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+
+/* Actions */
+.header > div {
+  display: flex;
+  gap: 1em;
+}
+.header > div > * {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg2);
+  color: var(--color);
+  padding: 0.5em;
+  border: 2px solid var(--border);
+  border-radius: 0.5em;
+}
+
+/* Notes */
+.notes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  border: 2px solid var(--border);
+  background-color: var(--bg2);
+  border-radius: 0.5em;
+}
+.notes p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.8em 1em;
+  background-color: var(--bg3);
+  border-bottom: 2px solid var(--border);
+  border-radius: 0.4em 0.4em 0 0;
+}
+.notes textarea {
+  padding: 0.8em 1em;
+  resize: none;
+  width: 100%;
+  height: 10em;
+  background-color: transparent;
+  border: none;
+  color: var(--color);
+}
+
+@media screen and (max-width: 600px) {
+  .header svg {
+    scale: .9;
+  }
+
+  .header > div > * {
+    padding: 0.4em;
+  }
+}

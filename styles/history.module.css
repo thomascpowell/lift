@@ -1,0 +1,13 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.search input {
+    background-color: var(--bg2);
+    color: var(--text);
+    border: 2px solid var(--border);
+    padding: .5em 1em;
+    border-radius: .5em;
+}

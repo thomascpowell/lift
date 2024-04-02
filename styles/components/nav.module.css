@@ -1,0 +1,64 @@
+.wrapper {
+    display: flex;
+    margin: 2em 0;
+    gap: 1em;
+    justify-content: space-between;
+}
+
+.pages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: 2px solid var(--border);
+    background-color: var(--bg2);
+    color: var(--color);
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+.pages > * {
+    background-color: transparent;
+    display: flex;
+    border: none;
+    gap: .5em;
+    justify-content: center;
+    align-items: center;
+    color: var(--color);
+    padding: .5em 1em;
+    margin: 0;
+}
+.pages > :nth-child(1) {
+    border-right: 2px solid var(--border);
+    padding-right: 1em;
+}
+.pages > :nth-child(2) {
+    padding-left: 1em;
+}
+
+.logout > * {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg2);
+    color: var(--color);
+    padding: .5em;
+    border: 2px solid var(--border);
+    border-radius: 0.5em;
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper svg {
+      scale: .8;
+    }
+  
+    .logout > * {
+      padding: 0.4em;
+    }
+
+    .pages > * {
+        padding: .4em .8em;
+    }
+  }
+
+  

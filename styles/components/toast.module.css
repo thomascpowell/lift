@@ -1,0 +1,38 @@
+.wrapper {
+  display: flex;
+  justify-content: right;
+  top: 0;
+  right: 0;
+  width: min-content;
+  white-space: nowrap;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+.inner {
+  position: sticky;
+  top: 1em;
+  display: flex;
+  z-index: 100!important;
+  gap: 1em;
+  margin: 1em!important;
+  background-color: var(--bg2);
+  align-items: center;
+  height: min-content;
+  padding: .5em 1em;
+  border-radius: .5em;
+  border: 2px solid var(--border);
+}
+
+.text :nth-child(1) {
+  font-size: .8em;
+  color: var(--color2);
+}
+.text :nth-child(2) {
+  font-size: 1em;
+}
+
+.inner svg {
+  align-items: center;
+  scale: 1.5;
+}
