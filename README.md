@@ -14,6 +14,8 @@ Tech Stack:
 - Styling: Custom CSS modules for styling.
 - Backend: Supabase for authentication and data storage.
 
+2024
+
 
 
 
