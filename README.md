@@ -10,8 +10,8 @@ Features:
 - History: Search, view, and edit past exercises by name.
 
 Tech Stack:
-- Frontend: React and NextJS
-- Styling: Custom CSS modules for styling.
+- Frontend: React and NextJS.
+- Styling: Custom CSS modules.
 - Backend: Supabase for authentication and data storage.
 
 2024
